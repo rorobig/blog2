@@ -18,7 +18,10 @@
 
                     <div class="post">
                         <h3><?php echo e($post->title); ?></h3>
-                        <p><?php echo e(substr(strip_tags($post->body), 0, 300)); ?><?php echo e(strlen(strip_tags($post->body)) > 300 ? "..." : ""); ?></p>
+                        <p><?php echo substr($post->body, 0, 300); ?><?php echo strlen(strip_tags($post->body)) > 300 ? "..." : ""; ?></p>
+
+
+
                         <a href="<?php echo e(url('blog/'.$post->slug)); ?>" class="btn btn-primary">Read More</a>
                     </div>
 

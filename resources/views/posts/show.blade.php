@@ -7,12 +7,11 @@
 		<div class="col-md-8">
 			<h1>{{ $post->title }}</h1>
 
-			<p class="lead">{{$post->body}}</p>
+			<p class="lead">{{strip_tags($post->body)}}</p>
 		</div>
 
 		<div class="col-md-4">
 			<div class="well">
-
 			<dl class="dl-horizontal">
 				<dt>Url:</dt>
 				<dd><a href="{{route('blog.single',$post->slug)}}">{{route('blog.single',$post->slug)}}</a></dd>
@@ -40,4 +39,6 @@
 			</div>
 	</div>
 	</div>
+
+
 @endsection

@@ -5,12 +5,11 @@
 		<div class="col-md-8">
 			<h1><?php echo e($post->title); ?></h1>
 
-			<p class="lead"><?php echo e($post->body); ?></p>
+			<p class="lead"><?php echo e(strip_tags($post->body)); ?></p>
 		</div>
 
 		<div class="col-md-4">
 			<div class="well">
-
 			<dl class="dl-horizontal">
 				<dt>Url:</dt>
 				<dd><a href="<?php echo e(route('blog.single',$post->slug)); ?>"><?php echo e(route('blog.single',$post->slug)); ?></a></dd>
@@ -41,5 +40,7 @@
 			</div>
 	</div>
 	</div>
+
+
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

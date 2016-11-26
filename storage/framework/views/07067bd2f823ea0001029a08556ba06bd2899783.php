@@ -4,8 +4,7 @@
 
     <div class="container">
       <?php echo $__env->make('partials._messages', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-      <?php echo e(Auth::check() ? "Logged in" :"Logged out"); ?>
-
+      <?php /* <?php echo e(Auth::check() ? "Logged in" :"Logged out"); ?> */ ?>
       <?php echo $__env->yieldContent('content'); ?>
     <hr>
     <p class="text-center">Copyrights Rkwidama <?php echo e(date('Y')); ?> - All rights Reserved</p>

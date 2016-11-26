@@ -29,7 +29,7 @@
 				<tr>
 					<th><?php echo e($post->id); ?></th>
 					<td><?php echo e($post->title); ?></td>
-					<td><?php echo e(substr($post->body,0,50)); ?> <?php echo e(strlen($post->body)>50? "...": ""); ?></td>
+					<td><?php echo e(substr(strip_tags($post->body),0,50)); ?> <?php echo e(strlen($post->body)>50? "...": ""); ?></td>
 					<td><?php echo e(date('M j,Y',strtotime($post->created_at))); ?></td>
 					<td><a href="<?php echo e(route('posts.show',$post->id)); ?>" class="btn btn-default">View</a><a href="<?php echo e(route('posts.edit',$post->id)); ?>" class="btn btn-default">Edit</a></td>
 				</tr>
