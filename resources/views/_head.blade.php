@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <link rel="icon" type="image/png" href="{{('img/icon.png')}}">
+    <link rel="icon" type="image/png" href="{{('/img/share.svg')}}">
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,17 @@
     <title>Laravel Blog @yield('title') </title>
     <!-- CHANGE THIS TITLE FOR EACH PAGE -->
 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
     <!-- Bootstrap -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
     {{Html::style('css/styles.css')}}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

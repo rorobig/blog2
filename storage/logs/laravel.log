@@ -14580,3 +14580,6 @@ Stack trace:
 #67 /Users/rocheandleykwidama/sites/blog2/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #68 /Users/rocheandleykwidama/sites/blog2/server.php(21): require_once('/Users/rocheand...')
 #69 {main}  
+[2016-11-27 11:17:02] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'parse error' in /Users/rocheandleykwidama/sites/blog2/storage/framework/views/7a48b552e190b44cb736181b32ac0443039fc174.php:34
+Stack trace:
+#0 {main}  

@@ -5,8 +5,8 @@
 
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
-		<h1><?php echo e($post->title); ?></h1>
-		<p><?php echo e($post->body); ?></p>
+		<h1><?php echo $post->title; ?></h1>
+		<p><?php echo $post->body; ?></p>
 	</div>
 </div>
 <?php $__env->stopSection(); ?>
