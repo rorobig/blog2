@@ -14,7 +14,7 @@
 		<h5>Pubished: <?php echo e(date('M j,Y',strtotime($post->created_at))); ?></h5>
 		<p><?php echo substr($post->body,0,250); ?><?php echo strlen($post->body)>250?'...':""; ?></p>
 		<?php /* <a href="<?php echo e(route('blog.single',$post->id)); ?>" class="btn btn-primary">Read More</a> */ ?>
-		  <a href="<?php echo e(url('blog/'.$post->slug)); ?>" class="ui primary  button">Read More</a>
+		  <a href="<?php echo e(url('blog/'.$post->slug)); ?>" class="ui primary  button">Read Me</a>
 	<hr>
 	</div>
 </div>
