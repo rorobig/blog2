@@ -4,7 +4,7 @@
         <div class="col-md-12">
           <div class="jumbotron">
             <h1>Welcome to My Blog!</h1>
-            <p class="lead">Thank you so much for visiting. This is my blog where you can find projects im working on and opinions i have about diffrent subjects.</p>
+            <p class="lead">Thank you so much for visiting. This is my blog where you can find projects that i'm working on and opinions i have about diffrent subjects.</p>
             <p><a class="ui primary  button large" href="#" role="button">Popular Post</a></p>
 
           </div>
