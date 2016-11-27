@@ -8,7 +8,7 @@
 		</div>
 
 		<div class="col-md-2">
-			<a href="{{route('posts.create')}}" class="btn btn-lg btn-block btn-primary btn-h1-margin">Create New post</a>
+			<a href="{{route('posts.create')}}" class="ui primary  button  btn-block  btn-h1-margin">Create New post</a>
 		</div>
 	<div class="col-md-12">
 		<hr>

@@ -26,12 +26,12 @@
 			<hr>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="<?php echo e(route('posts.edit', ['post'=>$post->id])); ?>" class="btn btn-primary btn-block">Edit</a>
+					<a href="<?php echo e(route('posts.edit', ['post'=>$post->id])); ?>" class="btn ui primary  button btn-block">Edit</a>
 				</div> 
 				<div class="col-sm-6">
 					<?php echo Form::open(['route'=>['posts.destroy',$post->id],'method'=> 'DELETE']); ?>
 
-					<?php echo Form::submit('Delete',['class'=>'btn btn-danger btn-block']); ?>
+					<?php echo Form::submit('Delete',['class'=>'ui primary  button btn-block']); ?>
 
 					<?php echo Form::close(); ?>
 

@@ -25,10 +25,10 @@
 			<hr>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="{{route('posts.show', ['post'=>$post->id])}}" class="btn btn-danger btn-block">Cancel</a>
+					<a href="{{route('posts.show', ['post'=>$post->id])}}" class="ui primary  button btn-block">Cancel</a>
 				</div> 
 				<div class="col-sm-6">
-				{{Form::submit('Save Changes',['Class'=>'btn btn-success btn-block'])}}
+				{{Form::submit('Save Changes',['Class'=>'ui primary  button btn-block'])}}
 				{{-- <a href="{{route('posts.update', ['post'=>$post->id])}}" class="btn btn-success btn-block">Save Changes</a> --}}
 				</div>
 			</div>

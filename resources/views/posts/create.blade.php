@@ -23,10 +23,10 @@
         			<label name="body" class="form-spacing-top">Post Body:</label>
         			<textarea id="body" name="body" rows="10" class="form-control "></textarea>
       			</div>
-      				<input type="submit" value="Create Post" class="btn btn-success btn-lg btn-block">
+      				<input type="submit" value="Create Post" class="ui primary  button large btn-block">
       				<input type="hidden" name="_token" value="{{ Session::token() }}">
    		  </form>
-
+ui primary  button
 		</div>
 	</div>
 

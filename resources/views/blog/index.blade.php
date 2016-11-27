@@ -16,7 +16,7 @@
 		<h5>Pubished: {{date('M j,Y',strtotime($post->created_at))}}</h5>
 		<p>{!!substr($post->body,0,250)!!}{!!strlen($post->body)>250?'...':""!!}</p>
 		{{-- <a href="{{route('blog.single',$post->id)}}" class="btn btn-primary">Read More</a> --}}
-		  <a href="{{ url('blog/'.$post->slug) }}" class="btn btn-primary">Read More</a>
+		  <a href="{{ url('blog/'.$post->slug) }}" class="ui primary  button">Read Me</a>
 	<hr>
 	</div>
 </div>
