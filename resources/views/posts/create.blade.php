@@ -26,7 +26,7 @@
       				<input type="submit" value="Create Post" class="ui primary  button large btn-block">
       				<input type="hidden" name="_token" value="{{ Session::token() }}">
    		  </form>
-ui primary  button
+
 		</div>
 	</div>
 

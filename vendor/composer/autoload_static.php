@@ -271,7 +271,9 @@ class ComposerStaticInit5923a6dc6654424c9ebf24988bc96870
     );
 
     public static $classMap = array (
+        'AddCategoryIdToPosts' => __DIR__ . '/../..' . '/database/migrations/2016_11_27_221409_add_category_id_to_posts.php',
         'AddSlugToUsers' => __DIR__ . '/../..' . '/database/migrations/2016_11_25_143522_add_slug_to_users.php',
+        'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_27_221026_create_categories_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreatePostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_15_130812_create_posts_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',

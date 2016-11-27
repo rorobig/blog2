@@ -7,6 +7,8 @@
 	<div class="col-md-8 col-md-offset-2">
 		<h1><?php echo $post->title; ?></h1>
 		<p><?php echo $post->body; ?></p>
+		<hr>
+		<p>Posted in :<?php echo e($post->category->name); ?></p>
 	</div>
 </div>
 <?php $__env->stopSection(); ?>
