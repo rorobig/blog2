@@ -68,6 +68,7 @@
        <i class="dropdown icon"></i>
       <div class="menu">
       <a class="item" href="<?php echo e(route('posts.index')); ?>">Posts</a>
+      <a class="item" href="<?php echo e(route('categories.index')); ?>">Categories</a>
         <a class="item "href=" <?php echo e(route('logout')); ?>">Logout</a>
       </div>
     </div>

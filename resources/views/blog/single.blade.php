@@ -10,7 +10,9 @@
 		<h1>{!!$post->title!!}</h1>
 		<p>{!!$post->body!!}</p>
 		<hr>
-		<p>Posted in :{{$post->category->name}}</p>
+		<p ><span class="ui tag teal label">Posted in :{{$post->category->name}}</span></p>
+
+
 	</div>
 </div>
 @endsection

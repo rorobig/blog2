@@ -20,12 +20,21 @@
             '','minlenght'=>'5','maxlenght'=>'255'))); ?>
 
 
+            <?php echo e(Form::label('category','Category:')); ?>
+
+            <select class="form-control" name="category_id" id="">
+             <?php foreach($categories as $category): ?>
+              <option value="<?php echo e($category->id); ?>"><?php echo e($category->name); ?></option>
+              <?php endforeach; ?>
+
+
+            </select>
 
       			<div class="form-group">
         			<label name="body" class="form-spacing-top">Post Body:</label>
         			<textarea id="body" name="body" rows="10" class="form-control "></textarea>
       			</div>
-      				<input type="submit" value="Create Post" class="btn btn-success btn-lg btn-block">
+      				<input type="submit" value="Create Post" class="ui primary  button large btn-block">
       				<input type="hidden" name="_token" value="<?php echo e(Session::token()); ?>">
    		  </form>
 

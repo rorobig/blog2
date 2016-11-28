@@ -8,7 +8,9 @@
 		<h1><?php echo $post->title; ?></h1>
 		<p><?php echo $post->body; ?></p>
 		<hr>
-		<p>Posted in :<?php echo e($post->category->name); ?></p>
+		<p ><span class="ui tag teal label">Posted in :<?php echo e($post->category->name); ?></span></p>
+
+
 	</div>
 </div>
 <?php $__env->stopSection(); ?>

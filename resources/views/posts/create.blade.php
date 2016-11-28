@@ -18,6 +18,14 @@
             {{ Form::text('slug',null,array('class'=>'form-control','', 'required'=>
             '','minlenght'=>'5','maxlenght'=>'255')) }}
 
+            {{Form::label('category','Category:')}}
+            <select class="form-control" name="category_id" id="">
+             @foreach($categories as $category)
+              <option value="{{$category->id}}">{{$category->name}}</option>
+              @endforeach
+
+
+            </select>
 
       			<div class="form-group">
         			<label name="body" class="form-spacing-top">Post Body:</label>

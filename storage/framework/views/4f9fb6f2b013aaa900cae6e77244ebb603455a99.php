@@ -10,6 +10,17 @@
 
 			<?php echo e(Form::text('title',null,["class"=> 'form-control input-lg'])); ?>
 
+
+			<?php echo e(Form::label('slug','Slug:',["class"=> 'form-spacing-top'])); ?>
+
+			<?php echo e(Form::text('slug',null,["class"=> 'form-control'])); ?>
+
+
+			<?php echo e(Form::label('category_id','Category:',["class"=> 'form-spacing-top'])); ?>
+
+			<?php echo e(Form::select('category_id',$categories ,null,['class'=>'form-control'] )); ?>
+
+
 			<?php echo e(Form::label('body','Body:',["class"=> 'form-spacing-top'])); ?>
 
 			<?php echo e(Form::textarea('body',null,["class"=> 'form-control'])); ?>
@@ -30,10 +41,10 @@
 			<hr>
 			<div class="row">
 				<div class="col-sm-6">
-					<a href="<?php echo e(route('posts.show', ['post'=>$post->id])); ?>" class="btn btn-danger btn-block">Cancel</a>
+					<a href="<?php echo e(route('posts.show', ['post'=>$post->id])); ?>" class="ui primary  button btn-block">Cancel</a>
 				</div> 
 				<div class="col-sm-6">
-				<?php echo e(Form::submit('Save Changes',['Class'=>'btn btn-success btn-block'])); ?>
+				<?php echo e(Form::submit('Save Changes',['Class'=>'ui primary  button btn-block'])); ?>
 
 				<?php /* <a href="<?php echo e(route('posts.update', ['post'=>$post->id])); ?>" class="btn btn-success btn-block">Save Changes</a> */ ?>
 				</div>
@@ -53,7 +64,7 @@
 <script>
 tinymce.init({
   selector: 'textarea',
-  height: 500,
+  height: 250,
   theme: 'modern',
   plugins: [
     'advlist autolink lists link image charmap print preview hr anchor pagebreak',
