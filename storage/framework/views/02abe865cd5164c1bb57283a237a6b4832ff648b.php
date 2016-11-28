@@ -6,6 +6,7 @@
 			<h1><?php echo e($post->title); ?></h1>
 
 			<p class="lead"><?php echo e(strip_tags($post->body)); ?></p>
+
 		</div>
 
 		<div class="col-md-4">
@@ -44,7 +45,8 @@
 			</div>
 	</div>
 	</div>
-
+<p ><span class="ui tag teal label">Posted in :<?php echo e($post->category->name); ?></span></p>
+	
 
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

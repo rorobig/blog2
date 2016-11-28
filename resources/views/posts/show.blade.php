@@ -8,6 +8,7 @@
 			<h1>{{ $post->title }}</h1>
 
 			<p class="lead">{{strip_tags($post->body)}}</p>
+
 		</div>
 
 		<div class="col-md-4">
@@ -43,6 +44,7 @@
 			</div>
 	</div>
 	</div>
-
+<p ><span class="ui tag teal label">Posted in :{{$post->category->name}}</span></p>
+	
 
 @endsection
