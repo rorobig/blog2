@@ -18,7 +18,7 @@
 
 				
 				<br>
-				<?php echo e(Form::checkbox('remember')); ?><?php echo e(Form::label('remember', "Remember Me")); ?>
+				<?php echo e(Form::checkbox('remember','',TRUE)); ?><?php echo e(Form::label('remember', "Remember Me")); ?>
 
 				
 				<br>
