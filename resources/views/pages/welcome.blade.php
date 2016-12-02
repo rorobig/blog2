@@ -26,8 +26,7 @@
 
     <a style="color:white" href="{{ url('blog/'.$post->slug) }}">
      <button class="ui button primary" >
-    <span class=" before">Read me</span>
-    <span class="after fa fa-arrow-right"></span>
+    <span class="">Read me</span>
 </a>
 
 </button>

@@ -4,8 +4,9 @@
 <div class="row">
 		<div class="col-md-8">
 			<h1><?php echo e($post->title); ?></h1>
-
-			<p class="lead"><?php echo e(strip_tags($post->body)); ?></p>
+ 	<img src="http://i.imgur.com/XQbcjvU.jpg" alt="">
+ 	<img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+			<p class="lead"><?php echo $post->body; ?></p>
 
 		</div>
 

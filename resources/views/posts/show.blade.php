@@ -6,7 +6,8 @@
 <div class="row">
 		<div class="col-md-8">
 			<h1>{{ $post->title }}</h1>
-
+ 	<img src="http://i.imgur.com/XQbcjvU.jpg" alt="">
+ 	<img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
 			<p class="lead">{!!$post->body!!}</p>
 
 		</div>

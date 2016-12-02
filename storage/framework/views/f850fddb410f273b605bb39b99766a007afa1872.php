@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <link rel="icon" type="image/png" href="<?php echo e(('L/img/share.svg')); ?>">
+    <link rel="icon" type="image/png" href="<?php echo e(('/img/share.svg')); ?>">
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
