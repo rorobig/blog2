@@ -41,25 +41,25 @@
     </nav>  */ ?>
 
 <div class="ui pointing menu">  
-<a href="" class="item"><img src="<?php echo e(('/img/share.svg')); ?>" alt=""> Rorotech</a>
+<a href="" class="item"><img style="padding-top: 90px;" src="<?php echo e(('/img/share.svg')); ?>" alt=""> <p class="snow">Rorotech</p></a>
   <a href="/" class="<?php echo e(Request::is('/')? "active": ""); ?> item">
-    Home
+    <p class="snow">Home</p>
   </a>
   <a href="/blog" class="<?php echo e(Request::is('blog')? "active": ""); ?> item">
-    Blog
+     <p class="snow">Blog</p>
   </a>
   <a  href="/about" class="<?php echo e(Request::is('about')? "active": ""); ?> item">
-    About
+     <p class="snow">About</p>
   </a>
   <a  href="/contact" class="<?php echo e(Request::is('contact')? "active": ""); ?> item">
-    Contact
+      <p class="snow">Contact</p>
   </a>
   <div class="right menu">
 
     <div class="item">
-      <div class="ui transparent icon input">
-        <input type="text" placeholder="Search...">
-        <i class="search link icon"></i>
+      <?php /* <div class="ui transparent icon input"> */ ?>
+        <?php /* <input type="text" placeholder="Search..."> */ ?>
+        <?php /* <i class="search link icon"></i> */ ?>
       </div>
     </div>
    
@@ -67,15 +67,15 @@
     <div class="ui dropdown item">Hello <?php echo e(Auth::user()->name); ?>  
        <i class="dropdown icon"></i>
       <div class="menu">
-      <a class="item" href="<?php echo e(route('posts.index')); ?>">Posts</a>
-      <a class="item" href="<?php echo e(route('categories.index')); ?>">Categories</a>
-        <a class="item "href=" <?php echo e(route('logout')); ?>">Logout</a>
+      <a class="item" href="<?php echo e(route('posts.index')); ?>"><p class="snow">Posts</p> </a>
+      <a class="item" href="<?php echo e(route('categories.index')); ?>"><p class="snow">Categories</p> </a>
+        <a class="item "href=" <?php echo e(route('logout')); ?>"><p class="snow"> Logout</p></a>
       </div>
     </div>
     <?php else: ?>
 
      <div class="item">
-      <a style="color:black" href="<?php echo e(route('login')); ?>" >Login<span class='glyphicon glyphicon-log-in' aria-hidden='true'></span></a>
+      <a  class="snow "style="color:snow" href="<?php echo e(route('login')); ?>" >Login<span style="color:snow" class='glyphicon glyphicon-log-in' aria-hidden='true'></span></a>
     </div>
  <?php endif; ?>
   </div>

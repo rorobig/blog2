@@ -41,25 +41,25 @@
     </nav>  --}}
 
 <div class="ui pointing menu">  
-<a href="" class="item"><img src="{{('/img/share.svg')}}" alt=""> Rorotech</a>
+<a href="" class="item"><img style="padding-top: 90px;" src="{{('/img/share.svg')}}" alt=""> <p class="snow">Rorotech</p></a>
   <a href="/" class="{{Request::is('/')? "active": ""}} item">
-    Home
+    <p class="snow">Home</p>
   </a>
   <a href="/blog" class="{{Request::is('blog')? "active": ""}} item">
-    Blog
+     <p class="snow">Blog</p>
   </a>
   <a  href="/about" class="{{Request::is('about')? "active": ""}} item">
-    About
+     <p class="snow">About</p>
   </a>
   <a  href="/contact" class="{{Request::is('contact')? "active": ""}} item">
-    Contact
+      <p class="snow">Contact</p>
   </a>
   <div class="right menu">
 
     <div class="item">
-      <div class="ui transparent icon input">
-        <input type="text" placeholder="Search...">
-        <i class="search link icon"></i>
+      {{-- <div class="ui transparent icon input"> --}}
+        {{-- <input type="text" placeholder="Search..."> --}}
+        {{-- <i class="search link icon"></i> --}}
       </div>
     </div>
    
@@ -67,15 +67,15 @@
     <div class="ui dropdown item">Hello {{Auth::user()->name}}  
        <i class="dropdown icon"></i>
       <div class="menu">
-      <a class="item" href="{{route('posts.index')}}">Posts</a>
-      <a class="item" href="{{route('categories.index')}}">Categories</a>
-        <a class="item "href=" {{route('logout')}}">Logout</a>
+      <a class="item" href="{{route('posts.index')}}"><p class="snow">Posts</p> </a>
+      <a class="item" href="{{route('categories.index')}}"><p class="snow">Categories</p> </a>
+        <a class="item "href=" {{route('logout')}}"><p class="snow"> Logout</p></a>
       </div>
     </div>
     @else
 
      <div class="item">
-      <a style="color:black" href="{{route('login')}}" >Login<span class='glyphicon glyphicon-log-in' aria-hidden='true'></span></a>
+      <a  class="snow "style="color:snow" href="{{route('login')}}" >Login<span style="color:snow" class='glyphicon glyphicon-log-in' aria-hidden='true'></span></a>
     </div>
  @endif
   </div>
