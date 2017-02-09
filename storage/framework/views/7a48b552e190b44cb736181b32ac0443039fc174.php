@@ -46,7 +46,7 @@
     <p class="snow">Home</p>
   </a>
   <a href="/blog" class="<?php echo e(Request::is('blog')? "active": ""); ?> item">
-     <p class="snow">Blog</p>
+     <p class="snow">Bloggg</p>
   </a>
   <a  href="/about" class="<?php echo e(Request::is('about')? "active": ""); ?> item">
      <p class="snow">About</p>
