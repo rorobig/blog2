@@ -46,7 +46,7 @@
     <p class="snow">Home</p>
   </a>
   <a href="/blog" class="{{Request::is('blog')? "active": ""}} item">
-     <p class="snow">Blog</p>
+     <p class="snow">Bloggg</p>
   </a>
   <a  href="/about" class="{{Request::is('about')? "active": ""}} item">
      <p class="snow">About</p>
