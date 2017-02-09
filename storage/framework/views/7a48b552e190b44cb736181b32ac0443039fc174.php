@@ -41,7 +41,7 @@
     </nav>  */ ?>
 
 <div class="ui pointing menu">  
-<a href="" class="item"><img style="padding-top: 90px;" src="<?php echo e(('/img/share.svg')); ?>" alt=""> <p class="snow">Rorotech</p></a>
+<a href="" class="item"><img style="padding-top: ;" src="<?php echo e(('/img/share.svg')); ?>" alt=""> <p class="snow">Rorotech</p></a>
   <a href="/" class="<?php echo e(Request::is('/')? "active": ""); ?> item">
     <p class="snow">Home</p>
   </a>

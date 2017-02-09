@@ -1,14 +1,14 @@
 .btn-h1-margin{
-	margin-top:18px;
+  margin-top:18px;
 }
 
 .form-spacing-top{
-	margin-top:30px;
+  margin-top:30px;
 }
 
 body{
 
-	/*background-color: #f0f0f0*/
+  /*background-color: #f0f0f0*/
 }
 
 button .after { display: none; }
@@ -16,22 +16,11 @@ button:hover .before { display: none; }
 button:hover .after { display: inline; }
 .ui.pointing.menu{
 
-height: 150px;
-/*background-image: url("/img/banner2.jpg");*/
- background: url("/img/banner3.jpg") ;
--webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;         /* Generic*/
-/*background-size: 500px 200px ; */
- /*background-color: green;*/
-
+background-color: ;
+height: 50px !important;
 
 }
-/*background: url("img/xmas2.gif");
-padding-bottom: 200px;*/
+
 .snow {
-padding-top: 100px;
-color:snow;
-font-size: 15px;
+
 }
